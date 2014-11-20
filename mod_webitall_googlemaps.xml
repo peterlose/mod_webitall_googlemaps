@@ -6,42 +6,43 @@
  */
 -->
 <extension type="module" version="3.0" client="site" method="upgrade">
-	<name>Webitall Google Maps</name>
-	<author>Peter Lose</author>
-	<creationDate>November 2014</creationDate>
-	<copyright>Copyright (c) 2014 Webitall Google Maps. All rights reserved.</copyright>
-	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<authorEmail>peter@webitall.dk</authorEmail>
-	<authorUrl>www.webitall.dk</authorUrl>
-	<version>1.0.0</version>
-	<description>
-	<![CDATA[
+    <name>Webitall Google Maps</name>
+    <author>Peter Lose</author>
+    <creationDate>November 2014</creationDate>
+    <copyright>Copyright (c) 2014 Webitall Google Maps. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>peter@webitall.dk</authorEmail>
+    <authorUrl>www.webitall.dk</authorUrl>
+    <version>1.0.0</version>
+    <description>
+        <![CDATA[
 	Google Maps module
 	]]>
-	</description>
+    </description>
 
-	<files>
-		<filename module="mod_webitall_googlemaps">mod_webitall_googlemaps.php</filename>
-		<filename>index.html</filename>
-		<folder>tmpl</folder>
-	</files>
+    <files>
+        <filename module="mod_webitall_googlemaps">mod_webitall_googlemaps.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+    </files>
 
-	<languages>
-		<language tag="da-DK">da-DK.mod_webitall_googlemaps.ini</language>
+    <languages>
+        <language tag="da-DK">da-DK.mod_webitall_googlemaps.ini</language>
         <language tag="en-GB">en-GB.mod_webitall_googlemaps.ini</language>
-	</languages>
+    </languages>
 
-	<config>
-		<fields name="params">
-			<fieldset name="basic">
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
                 <field
-                    name="framework"
-                    type="list"
-                    default="jquery"
-                    label="MOD_WEBITALL_GOOGLEMAPS_FRAMEWORK_LABEL"
-                    description="MOD_WEBITALL_GOOGLEMAPS_FRAMEWORK_DESC">
-                        <option value="jquery">MOD_WEBITALL_GOOGLEMAPS_FRAMEWORK_JQUERY</option>
-                        <option value="mootools">MOD_WEBITALL_GOOGLEMAPS_FRAMEWORK_MOOTOOLS</option>
+                        name="framework"
+                        type="list"
+                        default="jquery"
+                        label="MOD_WEBITALL_GOOGLEMAPS_FRAMEWORK_LABEL"
+                        description="MOD_WEBITALL_GOOGLEMAPS_FRAMEWORK_DESC">
+                    <option value="jquery">MOD_WEBITALL_GOOGLEMAPS_FRAMEWORK_JQUERY</option>
+                    <option value="mootools">MOD_WEBITALL_GOOGLEMAPS_FRAMEWORK_MOOTOOLS</option>
                 </field>
                 <field
                         name="maptype"
@@ -93,50 +94,50 @@
                         label="MOD_WEBITALL_GOOGLEMAPS_HEADLINE_LABEL"
                         description="MOD_WEBITALL_GOOGLEMAPS_HEADLINE_DESC"
                         />
-			</fieldset>
+            </fieldset>
 
-			<fieldset name="advanced">
-				<field
-					name="layout"
-					type="modulelayout"
-					label="JFIELD_ALT_LAYOUT_LABEL"
-					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
-				/>
+            <fieldset name="advanced">
+                <field
+                        name="layout"
+                        type="modulelayout"
+                        label="JFIELD_ALT_LAYOUT_LABEL"
+                        description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+                        />
 
-				<field
-					name="moduleclass_sfx"
-					type="text"
-					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
-					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
-				/>
+                <field
+                        name="moduleclass_sfx"
+                        type="text"
+                        label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                        description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+                        />
 
-				<field
-					name="cache"
-					type="list"
-					default="1"
-					label="COM_MODULES_FIELD_CACHING_LABEL"
-					description="COM_MODULES_FIELD_CACHING_DESC"
-				>
-					<option value="1">JGLOBAL_USE_GLOBAL</option>
-					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
-				</field>
+                <field
+                        name="cache"
+                        type="list"
+                        default="1"
+                        label="COM_MODULES_FIELD_CACHING_LABEL"
+                        description="COM_MODULES_FIELD_CACHING_DESC"
+                        >
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
 
-				<field
-					name="cache_time"
-					type="text"
-					default="900"
-					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
-					description="COM_MODULES_FIELD_CACHE_TIME_DESC"
-				/>
+                <field
+                        name="cache_time"
+                        type="text"
+                        default="900"
+                        label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                        description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+                        />
 
-				<field
-					name="cachemode"
-					type="hidden"
-					default="static"
-				>
-					<option value="static"></option>
-				</field>
-			</fieldset>
-		</fields>
-	</config>
+                <field
+                        name="cachemode"
+                        type="hidden"
+                        default="static"
+                        >
+                    <option value="static"></option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
 </extension>
