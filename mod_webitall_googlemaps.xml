@@ -9,7 +9,7 @@
 	<name>Webitall Google Maps</name>
 	<author>Peter Lose</author>
 	<creationDate>November 2014</creationDate>
-	<copyright>Copyright (c) 2014 WebitallGoogleMaps. All rights reserved.</copyright>
+	<copyright>Copyright (c) 2014 Webitall Google Maps. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>peter@webitall.dk</authorEmail>
 	<authorUrl>www.webitall.dk</authorUrl>
@@ -28,8 +28,8 @@
 	</files>
 
 	<languages>
-		<language tag="en-GB">en-GB.mod_webitall_googlemaps.ini</language>
-		<language tag="en-GB">en-GB.mod_webitall_googlemaps.sys.ini</language>
+		<language tag="da-DK">da-DK.mod_webitall_googlemaps.ini</language>
+        <language tag="en-GB">en-GB.mod_webitall_googlemaps.ini</language>
 	</languages>
 
 	<config>
@@ -39,28 +39,28 @@
                     name="framework"
                     type="list"
                     default="jquery"
-                    label="Framework"
-                    description="">
-                        <option value="jquery">jQuery</option>
-                        <option value="mootools">Mootools</option>
+                    label="MOD_WEBITALL_GOOGLEMAPS_FRAMEWORK_LABEL"
+                    description="MOD_WEBITALL_GOOGLEMAPS_FRAMEWORK_DESC">
+                        <option value="jquery">MOD_WEBITALL_GOOGLEMAPS_FRAMEWORK_JQUERY</option>
+                        <option value="mootools">MOD_WEBITALL_GOOGLEMAPS_FRAMEWORK_MOOTOOLS</option>
                 </field>
                 <field
                         name="maptype"
                         type="list"
                         default="ROADMAP"
-                        label="Maptype"
-                        description="">
-                    <option value="ROADMAP">Roadmap</option>
-                    <option value="SATELLITE">Satellite</option>
-                    <option value="HYBRID">Hybrid</option>
-                    <option value="TERRAIN">Terrain</option>
+                        label="MOD_WEBITALL_GOOGLEMAPS_MAPTYPE_LABEL"
+                        description="MOD_WEBITALL_GOOGLEMAPS_MAPTYPE_DESC">
+                    <option value="ROADMAP">MOD_WEBITALL_GOOGLEMAPS_MAPTYPE_ROADMAP</option>
+                    <option value="SATELLITE">MOD_WEBITALL_GOOGLEMAPS_MAPTYPE_SATELLITE</option>
+                    <option value="HYBRID">MOD_WEBITALL_GOOGLEMAPS_MAPTYPE_HYBRID</option>
+                    <option value="TERRAIN">MOD_WEBITALL_GOOGLEMAPS_MAPTYPE_TERRAIN</option>
                 </field>
                 <field
                         name="zoom"
                         type="list"
                         default="0"
-                        label="Zoom"
-                        description="">
+                        label="MOD_WEBITALL_GOOGLEMAPS_ZOOM_LABEL"
+                        description="MOD_WEBITALL_GOOGLEMAPS_ZOOM_DESC">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -85,14 +85,14 @@
                 <field
                         name="address"
                         type="text"
-                        label="Adresse"
-                        description=""
+                        label="MOD_WEBITALL_GOOGLEMAPS_ADDRESS_LABEL"
+                        description="MOD_WEBITALL_GOOGLEMAPS_ADDRESS_DESC"
                         />
                 <field
                         name="headline"
                         type="text"
-                        label="Overskrift"
-                        description=""
+                        label="MOD_WEBITALL_GOOGLEMAPS_HEADLINE_LABEL"
+                        description="MOD_WEBITALL_GOOGLEMAPS_HEADLINE_DESC"
                         />
 			</fieldset>
 
