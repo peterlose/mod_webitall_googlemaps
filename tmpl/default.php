@@ -12,9 +12,3 @@ defined('_JEXEC') or die;
 <div class="map">
     <?php $map->echoBody(); ?>
 </div>
-
-<pre>
-
-    <?php var_dump($map); ?>
-
-</pre>
