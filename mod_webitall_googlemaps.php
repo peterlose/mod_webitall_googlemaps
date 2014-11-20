@@ -8,7 +8,7 @@
 defined('_JEXEC') or die;
 
 $options = new JRegistry;
-//$options->set('autoload', $params->get('framework'));
+$options->set('autoload', $params->get('framework'));
 $google = new JGoogle($options);
 
 $map = $google->embed('maps');
