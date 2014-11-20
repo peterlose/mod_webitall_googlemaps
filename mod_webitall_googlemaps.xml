@@ -22,7 +22,6 @@
 
 	<files>
 		<filename module="mod_webitall_googlemaps">mod_webitall_googlemaps.php</filename>
-		<filename>helper.php</filename>
 		<filename>index.html</filename>
 		<folder>tmpl</folder>
 	</files>
