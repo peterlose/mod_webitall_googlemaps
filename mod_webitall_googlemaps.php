@@ -14,8 +14,19 @@ $google = new JGoogle($options);
 $map = $google->embed('maps');
 $map->setAutoload('jquery');
 $map->setZoom($params->get('zoom'));
-$map->setCenter($params->get('address'), $params->get('headline'));
+$map->setMapID($params->get('id'));
+$map->setMapClass($params->get('class'));
 $map->setMaptype($params->get('maptype'));
+
+$markers = json_decode($params->get('markers'));
+
+foreach($markers->address AS $key => $address) {
+    $map->addMarker($address);
+
+    if ($markers->setcenter[$key]) {
+        $map->setCenter($address);
+    }
+}
 
 $map->echoHeader();
 
