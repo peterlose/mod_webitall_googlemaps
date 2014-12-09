@@ -41,7 +41,7 @@
                        description="MOD_WEBITALL_GOOGLEMAPS_MARKERS_DESC"
                        select="MOD_WEBITALL_GOOGLEMAPS_SETMARKERS_LABEL">
                     <fields name="params">
-                        <fieldset hidden="true" name="noget_modal" repeat="true">
+                        <fieldset hidden="true" name="modal" repeat="true">
 
                             <field name="address"
                                    label="MOD_WEBITALL_GOOGLEMAPS_ADDRESS_LABEL"
