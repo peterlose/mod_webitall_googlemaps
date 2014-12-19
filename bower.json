@@ -1,0 +1,8 @@
+{
+  name: 'ModWebitallGoogleMaps',
+  version: '1.0',
+  ignore: [
+    'README.md'
+  ],
+  homepage: 'https://github.com/losedk/mod_webitall_googlemaps'
+}
