@@ -1,6 +1,7 @@
 {
     "name": "ModWebitallGoogleMaps",
     "version": "1.0",
+    "main": "",
     "ignore": [
 	    "README.MD"
     ]
